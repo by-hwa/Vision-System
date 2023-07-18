@@ -1,0 +1,19 @@
+Contents of the dataset:
+
+NewTsukubaStereoDataset/README -> This file
+
+NewTsukubaStereoDataset/illumination/daylight -> Rendered color images for left
+	and right camera under daylight illumunation. 1800 images per camera 
+	in PNG format.
+
+NewTsukubaStereoDataset/groundtruth/depth_maps -> Ground truth depth maps for
+	left and right camera. 1800 images per camera in OpenCV2 cv::Mat 
+	format (XML). The units of each value is expressed in centimiters 
+	(cm).
+
+NewTsukubaStereoDataset/groundtruth/disparity_maps -> Ground truth disparity 
+	maps for left and right camera. 1800 images per camera in PNG format.
+	The disparity values have been quantized into the range [0,255].
+
+The resolution of the images is 640x480 pixels, the baseline of the stereo 
+camera is 10cm and the focal length of the camera is 615 pixels.
